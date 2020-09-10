@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3">
+
+    <Toolbar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/title2"
+        android:title=""
+        tools:ignore="NewApi" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:src="@color/colortitle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="25dp"
+                android:textColor="@color/textcolor"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/About"
+                android:layout_below="@id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/badd"
+                android:layout_below="@id/About"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text="สถานที่ติดต่อ : "/>
+
+            <TextView
+                android:id="@+id/Add"
+                android:layout_below="@id/badd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/btel"
+                android:layout_below="@id/Add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text="โทรศัพท์ : "/>
+
+            <TextView
+                android:id="@+id/telnum"
+                android:layout_below="@id/btel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/benfee"
+                android:layout_below="@id/telnum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text="อัตราค่าบริการเข้าอุทยานแห่งชาติ"/>
+
+            <TextView
+                android:id="@+id/enfee"
+                android:layout_below="@id/benfee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/bwelshop"
+                android:layout_below="@id/enfee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"
+                android:text="ร้านค้าสวัสดิการ"/>
+
+            <TextView
+                android:id="@+id/welshop"
+                android:layout_below="@id/bwelshop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:maxLines="100"
+                android:fontFamily="@font/lamoon"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@color/textcolor"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
